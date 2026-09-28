@@ -1,0 +1,11 @@
+def convertsitemperature(values, unit):
+  if unit == 'C':
+    return (values * 9 / 5) + 32
+  elif unit == "f" :
+    return (values - 32) * 5 /9
+
+values = float(input("masukkan value: "))
+unit = (input("Masukkan unit (C/F): "))
+konversi = convertsitemperature(values,unit)
+
+print("Hasil konversi: ", konversi)
